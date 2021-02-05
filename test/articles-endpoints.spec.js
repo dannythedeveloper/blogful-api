@@ -196,7 +196,7 @@ describe('Articles Endpoints', function() {
           .insert(testArticles);
       });
 
-      it('responds with 204 and removes the articles', () => {
+      it('responds with 204 and removes the article', () => {
         const idToRemove = 2;
         const expectedArticles = testArticles.filter(article => article.id !== idToRemove);
         return supertest(app)
