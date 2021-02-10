@@ -17,7 +17,7 @@ const morganOption = (NODE_ENV === 'production')
 app.use(morgan(morganOption));
 app.use(helmet());
 
-app.use('/articles', articlesRouter);
+app.use('/api/articles', articlesRouter);
 
 app.get('/', (req, res) => {
   res.send('Hello, world!');
